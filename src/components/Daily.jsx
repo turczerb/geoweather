@@ -54,7 +54,7 @@ const Daily = () => {
     console.log("finished get cityname");
   };
 
-  const search = () => {
+  const search = (props) => {
     fetch(
       `http://api.weatherapi.com/v1/current.json?key=f8ea03577810484b92f140651222803&q=${data.address.city}&aqi=no`
     )
